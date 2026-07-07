@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inventree\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-06 12:10+0000\n"
-"PO-Revision-Date: 2026-07-06 12:13\n"
+"POT-Creation-Date: 2026-07-07 03:49+0000\n"
+"PO-Revision-Date: 2026-07-07 03:51\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -7395,7 +7395,7 @@ msgstr "Нет совпадения плагина для штрихкода п�
 msgid "Multiple matching line items found"
 msgstr "Найдено несколько соответствующих позиций"
 
-#: plugin/base/barcodes/api.py:699
+#: plugin/base/barcodes/api.py:699 plugin/base/barcodes/mixins.py:393
 msgid "No matching line item found"
 msgstr "Не найдено соответствующей позиции"
 
@@ -7428,23 +7428,23 @@ msgstr "Недостаточно информации"
 msgid "Found matching item"
 msgstr "Найден соответствующий элемент"
 
-#: plugin/base/barcodes/mixins.py:393
+#: plugin/base/barcodes/mixins.py:397
 msgid "Supplier part does not match line item"
 msgstr "Поставляемая деталь не соответствует позиции"
 
-#: plugin/base/barcodes/mixins.py:396
+#: plugin/base/barcodes/mixins.py:402
 msgid "Line item is already completed"
 msgstr "Позиция уже завершена"
 
-#: plugin/base/barcodes/mixins.py:434
+#: plugin/base/barcodes/mixins.py:440
 msgid "Further information required to receive line item"
 msgstr "Для получения позиции требуется дополнительная информация"
 
-#: plugin/base/barcodes/mixins.py:442
+#: plugin/base/barcodes/mixins.py:448
 msgid "Received purchase order line item"
 msgstr "Полученная позиция заказа на закупку"
 
-#: plugin/base/barcodes/mixins.py:449
+#: plugin/base/barcodes/mixins.py:455
 msgid "Failed to receive line item"
 msgstr "Не удалось получить позицию"
 

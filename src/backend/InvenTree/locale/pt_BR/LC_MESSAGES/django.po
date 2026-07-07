@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inventree\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-06 12:10+0000\n"
-"PO-Revision-Date: 2026-07-06 12:13\n"
+"POT-Creation-Date: 2026-07-07 03:49+0000\n"
+"PO-Revision-Date: 2026-07-07 03:51\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
@@ -6457,7 +6457,7 @@ msgstr "Esta é uma peça virtual, como um produto de software ou licença?"
 
 #: part/models.py:1315
 msgid "Is this part consumable, such as glue or a fastener?"
-msgstr ""
+msgstr "Esta peça é consumível, como cola ou um fixador?"
 
 #: part/models.py:1320
 msgid "BOM Validated"
@@ -7395,7 +7395,7 @@ msgstr "Nenhum plugin correspondente para o código de barras do fornecedor"
 msgid "Multiple matching line items found"
 msgstr "Vários itens de linha correspondentes encontrados"
 
-#: plugin/base/barcodes/api.py:699
+#: plugin/base/barcodes/api.py:699 plugin/base/barcodes/mixins.py:393
 msgid "No matching line item found"
 msgstr "Nenhum item de linha correspondente encontrado"
 
@@ -7428,23 +7428,23 @@ msgstr "Informações insuficientes"
 msgid "Found matching item"
 msgstr "Item correspondente encontrado"
 
-#: plugin/base/barcodes/mixins.py:393
+#: plugin/base/barcodes/mixins.py:397
 msgid "Supplier part does not match line item"
 msgstr "A peça de fornecedor não corresponde ao item de linha"
 
-#: plugin/base/barcodes/mixins.py:396
+#: plugin/base/barcodes/mixins.py:402
 msgid "Line item is already completed"
 msgstr "O item de linha já foi concluído"
 
-#: plugin/base/barcodes/mixins.py:434
+#: plugin/base/barcodes/mixins.py:440
 msgid "Further information required to receive line item"
 msgstr "Mais informações necessárias para receber o item de linha"
 
-#: plugin/base/barcodes/mixins.py:442
+#: plugin/base/barcodes/mixins.py:448
 msgid "Received purchase order line item"
 msgstr "Item de linha do pedido de compra recebido"
 
-#: plugin/base/barcodes/mixins.py:449
+#: plugin/base/barcodes/mixins.py:455
 msgid "Failed to receive line item"
 msgstr "Falha ao receber o item de linha"
 

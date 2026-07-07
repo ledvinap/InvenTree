@@ -8,7 +8,7 @@ msgstr ""
 "Language: pt\n"
 "Project-Id-Version: inventree\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-07-06 14:32\n"
+"PO-Revision-Date: 2026-07-07 00:56\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese, Brazilian\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -8787,7 +8787,7 @@ msgstr "Peça vendível"
 
 #: src/pages/part/PartDetail.tsx:555
 msgid "Consumable Part"
-msgstr ""
+msgstr "Peça consumível"
 
 #: src/pages/part/PartDetail.tsx:589
 msgid "Default Expiry"
@@ -9337,11 +9337,11 @@ msgstr "Editar dados de preço"
 
 #: src/pages/part/pricing/PricingOverviewPanel.tsx:347
 msgid "Override Minimum"
-msgstr ""
+msgstr "Substituir mínimo"
 
 #: src/pages/part/pricing/PricingOverviewPanel.tsx:353
 msgid "Override Maximum"
-msgstr ""
+msgstr "Substituir máximo"
 
 #: src/pages/part/pricing/PricingPanel.tsx:24
 msgid "No data available"
@@ -11699,7 +11699,7 @@ msgstr "Filtrar por peças que são virtuais"
 
 #: src/tables/part/PartTableFilters.tsx:110
 msgid "Filter by parts which are consumable"
-msgstr ""
+msgstr "Filtrar por peças que são consumíveis"
 
 #: src/tables/part/PartTableFilters.tsx:115
 msgid "Is Template"

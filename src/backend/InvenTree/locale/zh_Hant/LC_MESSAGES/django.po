@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inventree\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-06 12:10+0000\n"
-"PO-Revision-Date: 2026-07-06 12:13\n"
+"POT-Creation-Date: 2026-07-07 03:49+0000\n"
+"PO-Revision-Date: 2026-07-07 03:51\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
@@ -7395,7 +7395,7 @@ msgstr "供應商條碼未匹配任何模組"
 msgid "Multiple matching line items found"
 msgstr "找到多個匹配的行項目"
 
-#: plugin/base/barcodes/api.py:699
+#: plugin/base/barcodes/api.py:699 plugin/base/barcodes/mixins.py:393
 msgid "No matching line item found"
 msgstr "未找到匹配的行項目"
 
@@ -7428,23 +7428,23 @@ msgstr "沒有足夠的信息"
 msgid "Found matching item"
 msgstr "找到匹配項目"
 
-#: plugin/base/barcodes/mixins.py:393
+#: plugin/base/barcodes/mixins.py:397
 msgid "Supplier part does not match line item"
 msgstr "供應商零件與行項目不匹配"
 
-#: plugin/base/barcodes/mixins.py:396
+#: plugin/base/barcodes/mixins.py:402
 msgid "Line item is already completed"
 msgstr "行項目已完成"
 
-#: plugin/base/barcodes/mixins.py:434
+#: plugin/base/barcodes/mixins.py:440
 msgid "Further information required to receive line item"
 msgstr "需要更多信息以接收行項目"
 
-#: plugin/base/barcodes/mixins.py:442
+#: plugin/base/barcodes/mixins.py:448
 msgid "Received purchase order line item"
 msgstr "已收到採購訂單行項目"
 
-#: plugin/base/barcodes/mixins.py:449
+#: plugin/base/barcodes/mixins.py:455
 msgid "Failed to receive line item"
 msgstr "接收行項目失敗"
 

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inventree\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-06 12:10+0000\n"
-"PO-Revision-Date: 2026-07-06 12:13\n"
+"POT-Creation-Date: 2026-07-07 03:49+0000\n"
+"PO-Revision-Date: 2026-07-07 03:51\n"
 "Last-Translator: \n"
 "Language-Team: Greek\n"
 "Language: el_GR\n"
@@ -7395,7 +7395,7 @@ msgstr "Δεν υπάρχει πρόσθετο που να ταιριάζει γ
 msgid "Multiple matching line items found"
 msgstr "Βρέθηκαν πολλαπλές αντίστοιχες γραμμές"
 
-#: plugin/base/barcodes/api.py:699
+#: plugin/base/barcodes/api.py:699 plugin/base/barcodes/mixins.py:393
 msgid "No matching line item found"
 msgstr "Δεν βρέθηκε αντίστοιχη γραμμή"
 
@@ -7428,23 +7428,23 @@ msgstr "Μη επαρκείς πληροφορίες"
 msgid "Found matching item"
 msgstr "Βρέθηκε αντίστοιχο είδος"
 
-#: plugin/base/barcodes/mixins.py:393
+#: plugin/base/barcodes/mixins.py:397
 msgid "Supplier part does not match line item"
 msgstr "Το προϊόν προμηθευτή δεν ταιριάζει με τη γραμμή"
 
-#: plugin/base/barcodes/mixins.py:396
+#: plugin/base/barcodes/mixins.py:402
 msgid "Line item is already completed"
 msgstr "Η γραμμή είναι ήδη ολοκληρωμένη"
 
-#: plugin/base/barcodes/mixins.py:434
+#: plugin/base/barcodes/mixins.py:440
 msgid "Further information required to receive line item"
 msgstr "Απαιτούνται επιπλέον πληροφορίες για την παραλαβή της γραμμής"
 
-#: plugin/base/barcodes/mixins.py:442
+#: plugin/base/barcodes/mixins.py:448
 msgid "Received purchase order line item"
 msgstr "Παραλήφθηκε η γραμμή εντολής αγοράς"
 
-#: plugin/base/barcodes/mixins.py:449
+#: plugin/base/barcodes/mixins.py:455
 msgid "Failed to receive line item"
 msgstr "Αποτυχία παραλαβής γραμμής"
 

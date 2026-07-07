@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inventree\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-06 12:10+0000\n"
-"PO-Revision-Date: 2026-07-06 12:13\n"
+"POT-Creation-Date: 2026-07-07 03:49+0000\n"
+"PO-Revision-Date: 2026-07-07 03:51\n"
 "Last-Translator: \n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
@@ -7395,7 +7395,7 @@ msgstr "공급업체 바코드에 일치하는 플러그인이 없습니다"
 msgid "Multiple matching line items found"
 msgstr "일치하는 라인 항목이 여러 개 있습니다"
 
-#: plugin/base/barcodes/api.py:699
+#: plugin/base/barcodes/api.py:699 plugin/base/barcodes/mixins.py:393
 msgid "No matching line item found"
 msgstr "일치하는 라인 항목을 찾을 수 없습니다"
 
@@ -7428,23 +7428,23 @@ msgstr "정보가 충분하지 않습니다"
 msgid "Found matching item"
 msgstr "일치하는 항목을 찾았습니다"
 
-#: plugin/base/barcodes/mixins.py:393
+#: plugin/base/barcodes/mixins.py:397
 msgid "Supplier part does not match line item"
 msgstr "공급업체 부품이 라인 항목과 일치하지 않습니다"
 
-#: plugin/base/barcodes/mixins.py:396
+#: plugin/base/barcodes/mixins.py:402
 msgid "Line item is already completed"
 msgstr "라인 항목이 이미 완료되었습니다"
 
-#: plugin/base/barcodes/mixins.py:434
+#: plugin/base/barcodes/mixins.py:440
 msgid "Further information required to receive line item"
 msgstr "라인 항목을 입고하려면 추가 정보가 필요합니다"
 
-#: plugin/base/barcodes/mixins.py:442
+#: plugin/base/barcodes/mixins.py:448
 msgid "Received purchase order line item"
 msgstr "구매 주문 라인 항목을 입고했습니다"
 
-#: plugin/base/barcodes/mixins.py:449
+#: plugin/base/barcodes/mixins.py:455
 msgid "Failed to receive line item"
 msgstr "라인 항목 입고에 실패했습니다"
 
