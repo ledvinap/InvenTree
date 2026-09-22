@@ -12,7 +12,7 @@ from django.conf import settings
 from django.contrib.contenttypes.models import ContentType
 from django.core.exceptions import ValidationError
 from django.template import Context, Template
-from django.test import TestCase, override_settings
+from django.test import SimpleTestCase, TestCase, override_settings
 from django.utils import timezone
 from django.utils.safestring import SafeString
 
@@ -26,6 +26,35 @@ from part.models import Part
 from part.test_api import PartImageTestMixin
 from report.templatetags import barcode as barcode_tags
 from report.templatetags import report as report_tags
+
+
+class FailLabelTagTest(SimpleTestCase):
+    """Test deliberate validation failures in templates."""
+
+    def test_fail_label(self):
+        """Literal and variable messages are preserved by the template tag."""
+        message = 'Serial number is required for this label'
+
+        for argument in [f'"{message}"', 'error_message']:
+            with self.subTest(argument=argument):
+                template = Template(
+                    '{% load report %}{% fail_label ' + argument + ' %}'
+                )
+                with self.assertRaises(ValidationError) as raised:
+                    template.render(Context({'error_message': message}))
+
+                self.assertEqual(raised.exception.messages, [message])
+
+    def test_conditional_failure(self):
+        """A tag inside a false condition does not stop rendering."""
+        template = Template(
+            '{% load report %}'
+            '{% if not stock_item.serial %}{% fail_label "Serial required" %}{% endif %}'
+            '{{ stock_item.serial }}'
+        )
+        self.assertEqual(
+            template.render(Context({'stock_item': {'serial': '123'}})), '123'
+        )
 
 
 class ReportTagTest(PartImageTestMixin, InvenTreeTestCase):

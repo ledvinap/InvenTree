@@ -49,6 +49,19 @@ register = template.Library()
 logger = logging.getLogger('inventree')
 
 
+@register.simple_tag()
+def fail_label(message: str):
+    """Stop rendering a label with an error message.
+
+    Arguments:
+        message: The error message to display for the failed print job.
+
+    Raises:
+        ValidationError: Whenever this tag is evaluated.
+    """
+    raise ValidationError(message)
+
+
 def get_locale(locale: Optional[str] = None) -> Locale:
     """Resolve and return a babel Locale.
 

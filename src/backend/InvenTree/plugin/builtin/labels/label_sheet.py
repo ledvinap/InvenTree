@@ -12,6 +12,7 @@ from rest_framework import serializers
 
 import report.helpers
 from common.models import DataOutput
+from InvenTree.exceptions import log_error
 from InvenTree.helpers import str2bool
 from plugin import InvenTreePlugin
 from plugin.mixins import LabelPrintingMixin, SettingsMixin
@@ -219,6 +220,9 @@ class InvenTreeLabelSheetPlugin(LabelPrintingMixin, SettingsMixin, InvenTreePlug
                             items[idx], request, insert_page_style=False
                         )
                         html += cell
+                    except ValidationError:
+                        log_error('print_page', plugin=self.slug)
+                        raise
                     except Exception as exc:
                         logger.exception('Error rendering label: %s', exc)
                         html += """

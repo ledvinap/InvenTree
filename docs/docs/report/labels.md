@@ -120,6 +120,26 @@ OUT OF STOCK
 {% endraw %}
 ```
 
+### Validating Label Data
+
+Use the [fail_label helper](./helpers.md#rejecting-invalid-label-data) to reject data which cannot produce a valid label:
+
+```html
+{% raw %}
+{% load report %}
+{% if not stock_item.serial %}
+    {% fail_label "Serial number is required for this label" %}
+{% endif %}
+{% endraw %}
+```
+
+When evaluated, the tag raises a validation error and stops the print job. The supplied message is retained in the failed print result. A later delivery of the same failed background job is skipped; correcting the data and submitting a new print job allows printing again.
+
+The built-in label sheet printer aborts the entire sheet job on a validation error, without generating a downloadable document. Other rendering exceptions retain the existing error-cell behavior.
+
+!!! warning "Batch printing"
+    Validation happens when each template is evaluated. Earlier labels may already have printed or been queued by the printing plugin. This does not validate the entire batch before printing or undo earlier printing. Custom plugins must propagate template validation errors for this behavior to apply.
+
 ### Label Filters
 
 Each label template provides a set of programmable filters which can be used to determine the relevance of that particular label. It may be the case that a particular label template is only applicable if certain conditions are met.
